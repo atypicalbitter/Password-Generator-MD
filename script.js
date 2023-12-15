@@ -86,9 +86,13 @@ const upperCasedCharacters = [
 
 
 function getPasswordOptions() {
-  let length = parseInt(prompt('How long do you want your password to be? It can be as small as 8 characters and as long as 128 characters.'))
+  let length = parseInt(prompt('How long do you want your password to be? It can be as small as 8 characters and as long as 128 characters.'));
 }
-console.log(getPasswordOptions);
+while (isNaN(length) || length <8 || length > 128) {
+  alert('Please enter a number between 8 & 128.');
+  length = parseInt(prompt('Enter the length of your password please.'));
+  
+}
 
 // Function for getting a random element from an array
 function getRandom(arr) {
