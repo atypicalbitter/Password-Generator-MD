@@ -1,4 +1,3 @@
-// Array of special characters to be included in password
 const specialCharacters = [
   '@',
   '%',
@@ -25,10 +24,8 @@ const specialCharacters = [
   '.'
 ];
 
-// Array of numeric characters to be included in password
 const numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-// Array of lowercase characters to be included in password
 const lowerCasedCharacters = [
   'a',
   'b',
@@ -58,7 +55,6 @@ const lowerCasedCharacters = [
   'z'
 ];
 
-// Array of uppercase characters to be included in password
 const upperCasedCharacters = [
   'A',
   'B',
@@ -88,10 +84,11 @@ const upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
 
+function getPasswordOptions() {
+  let length = parseInt(prompt('How long do you want your password to be? It can be as small as 8 characters and as long as 128 characters.'))
 }
+console.log(getPasswordOptions);
 
 // Function for getting a random element from an array
 function getRandom(arr) {
