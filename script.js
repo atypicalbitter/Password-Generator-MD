@@ -94,6 +94,11 @@ while (isNaN(length) || length <8 || length > 128) {
   
 }
 
+let hasLowercase = confirm("Do you want to include lowercase characters?");
+let hasUppercase = confirm("Do you want to include uppercase characters?");
+let hasNumeric = confirm("Do you want include numeric characters?");
+let hasSpecial = confirm("Do you want to include special characters?");
+
 // Function for getting a random element from an array
 function getRandom(arr) {
 
