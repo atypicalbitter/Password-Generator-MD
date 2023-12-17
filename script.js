@@ -94,7 +94,6 @@ function getPasswordOptions() {
     length = parseInt(prompt("Enter the length of your password (between 8 and 128 characters):"));
   }
 
-
   let hasLowercase = confirm("Include lowercase characters?");
   let hasUppercase = confirm("Include uppercase characters?");
   let hasNumeric = confirm("Include numeric characters?");
@@ -142,6 +141,14 @@ if (options.hasNumeric) {
 if (options.hasSpecial) {
   possibleCharacters = possibleCharacters.concat(specialCharacters);
 }
+
+for (let i = 0; i < options.length; i++) {
+  const randomCharacter = getRandom(possibleCharacters);
+  result += randomCharacter;
+}
+
+return result;
+
 
 // Get references to the #generate element
 const generateBtn = document.querySelector('#generate');
