@@ -99,6 +99,13 @@ let hasUppercase = confirm("Do you want to include uppercase characters?");
 let hasNumeric = confirm("Do you want include numeric characters?");
 let hasSpecial = confirm("Do you want to include special characters?");
 
+while (!(hasLowercase || hasUppercase || hasnumeric || hasSpecial)) {
+  alert("At least one character type must be selected.");
+  hasLowercase = confirm("Include lowercase characters?");
+  hasUppercase = confirm("Include uppercase characters?");
+  hasNumeric = confirm("Include numeric characters?");
+  hasSpecial = confirm("Include special characters?");
+
 // Function for getting a random element from an array
 function getRandom(arr) {
 
