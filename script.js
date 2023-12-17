@@ -133,15 +133,15 @@ function generatePassword() {
 if (options.hasLowercase) {
   possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
 }
-if (options.hasUppercase) 
+if (options.hasUppercase) {
   possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
 }
-if (options.hasNumeric) 
+if (options.hasNumeric) {
   possibleCharacters = possibleCharacters.concat(numericCharacters);
 }
-if (options.hasSpecial) 
+if (options.hasSpecial) {
   possibleCharacters = possibleCharacters.concat(specialCharacters);
-
+}
 
 // Get references to the #generate element
 const generateBtn = document.querySelector('#generate');
