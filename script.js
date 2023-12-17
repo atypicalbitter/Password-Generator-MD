@@ -86,26 +86,39 @@ const upperCasedCharacters = [
 
 
 function getPasswordOptions() {
-  let length = parseInt(prompt('How long do you want your password to be? It can be as small as 8 characters and as long as 128 characters.'));
-}
-while (isNaN(length) || length <8 || length > 128) {
-  alert('Please enter a number between 8 & 128.');
-  length = parseInt(prompt('Enter the length of your password please.'));
-  
+  let length = parseInt(prompt("Enter the length of your password (between 8 and 128 characters):"));
+
+
+  while (isNaN(length) || length < 8 || length > 128) {
+    alert("Please enter a valid number between 8 and 128.");
+    length = parseInt(prompt("Enter the length of your password (between 8 and 128 characters):"));
+  }
+
+
+  let hasLowercase = confirm("Include lowercase characters?");
+  let hasUppercase = confirm("Include uppercase characters?");
+  let hasNumeric = confirm("Include numeric characters?");
+  let hasSpecial = confirm("Include special characters?");
+
+
+  while (!(hasLowercase || hasUppercase || hasNumeric || hasSpecial)) {
+    alert("At least one character type must be selected.");
+    hasLowercase = confirm("Include lowercase characters?");
+    hasUppercase = confirm("Include uppercase characters?");
+    hasNumeric = confirm("Include numeric characters?");
+    hasSpecial = confirm("Include special characters?");
+  }
+
+  return {
+    length,
+    hasLowercase,
+    hasUppercase,
+    hasNumeric,
+    hasSpecial
+  };
 }
 
-let hasLowercase = confirm("Do you want to include lowercase characters?");
-let hasUppercase = confirm("Do you want to include uppercase characters?");
-let hasNumeric = confirm("Do you want include numeric characters?");
-let hasSpecial = confirm("Do you want to include special characters?");
 
-while (!(hasLowercase || hasUppercase || hasNumeric || hasSpecial)) {
-  alert("At least one character type must be selected.");
-  hasLowercase = confirm("Include lowercase characters?");
-  hasUppercase = confirm("Include uppercase characters?");
-  hasNumeric = confirm("Include numeric characters?");
-  hasSpecial = confirm("Include special characters?");
-}
 
 // Function for getting a random element from an array
 function getRandom(arr) {
