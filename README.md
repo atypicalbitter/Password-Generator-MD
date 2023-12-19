@@ -14,8 +14,6 @@ Welcome to this password generator application I have built. The purpose of this
 - [Deployed Link](#deployed-link)
 - [Author](#author)
 
-
-
 ## Installation 
 
 No need to install. The application can be used via the link provided in the deployed link section. 
@@ -60,7 +58,7 @@ Now, when a user clicks the "Generate Password" button, the complete process is 
 ## This was the final output. 10 characters including uppercase, lowercase and special characters but no numbers. 
 ![Alt text](<Assets/Screenshot 2023-12-19 at 20.18.21.png>)
 
-I had to do a lot of research for this project but I feel very happy in making this work and learning how to make this applictaion operate.
+I had to do a lot of research for this project but I feel very happy in making this work and learning how to make this application operate.
  
 ## License
 
@@ -75,7 +73,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Deployed Link
- * [See Deployed Link Here](https://github.com/atypicalbitter)
+ * [See Deployed Link Here](https://atypicalbitter.github.io/Password-Generator-MD/)
 
 ## Author
  * [Matt Dudman](https://github.com/atypicalbitter)
