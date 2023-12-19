@@ -39,6 +39,29 @@ The first thing I needed to do was be able to generate the password options. By 
 
 The next thing was to create an array to return a random element. I used Math.random() to generate a random decimal between 0 and 1. Then I used Math.floor to get a whole number index.
 
+Then I created the empty arry which was 'possible characters' which returned a result of desired characters and length that was selected via the prompts. 
+
+Then I used document.querySelector to select the "Generate Password" button by its ID and then uded addEventListener to attach the writePassword function to the button's click event. I then used document.querySelector to select the password textarea and store it in the passwordText variable.
+
+Now, when a user clicks the "Generate Password" button, the complete process is executed, and the generated password is displayed on the page. Attached below are a screen shot of the prompts and the application in action. 
+
+## This is what appears when application is loaded.
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.12.19.png>)
+## Once the 'Generate Password' button has been clicked it brings up the first prompt which is asking you for the length of your password.
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.13.21.png>)
+## It then brings up the prompt if you want to include lowercase characters.
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.14.32.png>)
+## It then brings up the prompt if you want to include uppercase characters.
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.15.19.png>)
+## It then brings up the prompt if you want to include numbers. For the purposes of demonstation, I clicked 'cancel' here which acts as a 'no' feature. 
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.15.46.png>)
+## It then brings up the prompt if you want to include special characters.
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.16.43.png>)
+## This was the final output. 10 characters including uppercase, lowercase and special characters but no numbers. 
+![Alt text](<Assets/Screenshot 2023-12-19 at 20.18.21.png>)
+
+I had to do a lot of research for this project but I feel very happy in making this work and learning how to make this applictaion operate.
+ 
 ## License
 
 MIT License
